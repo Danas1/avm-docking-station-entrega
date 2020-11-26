@@ -1,0 +1,10 @@
+[Unit]
+Description=Envia notificaciones al telefono del usuario
+BindsTo=bluetooth-comm.service
+
+[Service]
+ExecStart=/bin/bluetooth-send.py
+Restart=on-abnormal
+
+[Install]
+WantedBy=bluetooth-comm.service

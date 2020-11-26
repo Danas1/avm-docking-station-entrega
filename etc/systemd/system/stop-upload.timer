@@ -1,0 +1,9 @@
+[Unit]
+Description=Detiene el servicio upload-server
+
+[Timer]
+Type=oneshot
+OnCalendar=*-*-* 18:00
+
+[Install]
+WantedBy=timers.target

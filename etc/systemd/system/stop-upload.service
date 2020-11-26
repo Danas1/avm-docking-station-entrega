@@ -1,0 +1,7 @@
+[Unit]
+Description=Stops data upload
+Conflicts=upload-server.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/upload-stop.sh

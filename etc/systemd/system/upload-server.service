@@ -1,0 +1,6 @@
+[Unit]
+Description=Servicio asociado a la unidad upload-server.timer
+
+[Service]
+User=pi
+ExecStart=upload-files.sh

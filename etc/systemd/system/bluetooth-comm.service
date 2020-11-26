@@ -1,0 +1,8 @@
+[Unit]
+Description=Inicia la comunicacion de la RPI con el celular del usuario
+
+[Service]
+Type=simple
+ExecStart=/bin/bluetooth-comm.py
+Restart=on-abnormal
+RestartSec=3

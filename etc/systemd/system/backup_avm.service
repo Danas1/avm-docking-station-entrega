@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup from AVM
+
+[Service]
+Type=simple
+ExecStart= sudo /bin/device_added.sh %i
+StandardOutput=file:/var/log/backup.log
+StandardError=file:/var/log/backuperror.log
+

@@ -1,0 +1,8 @@
+[Unit]
+Description=Determina si existe un dispositivo conectado en rfcomm0
+
+[Path]
+PathExists=/dev/rfcomm0
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=Monitorea el estado de los pin gpio
+
+[Service]
+ExecStart=/bin/detect_button.py
+
+[Install]
+WantedBy=multi-user.target

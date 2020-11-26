@@ -1,0 +1,7 @@
+[Unit]
+Description= Realiza el pareo entre RPI y Celular.
+
+[Service]
+Type=oneshot
+ExecStart=sudo /bin/bluetooth-pair-device.sh
+ExecStartPost=/bin/touch /bin/device_added.txt

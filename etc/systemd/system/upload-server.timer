@@ -1,0 +1,8 @@
+[Unit]
+Description=Timer unit of upload-server
+
+[Timer]
+OnCalendar=*-*-* 17:31
+
+[Install]
+WantedBy=timers.target
